@@ -1,72 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZenoBot - Le Bot de Cybersécurité</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .bg-hero {
-      position: relative;
-      background-image: url('img/zeno-header.png');
-      background-size: cover;
-      background-position: center;
-      filter: brightness(0.8); /* Luminosité plus élevée */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenoBot - Conditions d'Utilisation</title>
+    <style>
+        :root {
+            --bg-color: #0f0f1b;
+            --card-bg: #1a1a2e;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #f59e0b; /* Doré Dragon Ball */
+            --accent-hover: #d97706;
+        }
 
-    /* Superposition en dégradé plus subtile */
-    .bg-hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
-      pointer-events: none;
-      z-index: 1;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
 
-    /* Pour que le contenu soit au-dessus de la superposition */
-    .bg-hero > .content-wrapper {
-      position: relative;
-      z-index: 10;
-    }
-  </style>
+        header {
+            background-color: var(--card-bg);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: var(--accent);
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #334155;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-<body class="bg-black text-green-400 font-mono">
+<body>
 
-  <header class="bg-hero py-32 text-center relative">
-    <div class="content-wrapper">
-      <h1 class="text-6xl font-extrabold text-white drop-shadow-xl">👾 ZenoBot</h1>
-      <p class="text-xl text-green-300 mt-4">Cybersécurité divine avec humour galactique</p>
+    <header>
+        <h1>🌌 ZenoBot</h1>
+        <p>Conditions d'Utilisation & Politique de Confidentialité</p>
+    </header>
+
+    <div class="container">
+        
+        <p style="text-align: center; color: var(--text-muted);"><em>Dernière mise à jour : Février 2026</em></p>
+
+        <div class="section">
+            <h2>1. Acceptation des Conditions</h2>
+            <p>En invitant ZenoBot sur votre serveur Discord ou en utilisant ses commandes (slash commands <code>/</code>), vous acceptez pleinement et sans réserve les présentes conditions d'utilisation. Si vous n'acceptez pas ces termes, vous devez expulser le bot de votre serveur.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Description du Service</h2>
+            <p>ZenoBot est un robot Discord multifonction conçu pour administrer, modérer et animer les serveurs. Ses fonctionnalités incluent, sans s'y limiter :</p>
+            <ul>
+                <li><strong>Modération & Sécurité :</strong> Bannissement automatique (liens frauduleux), purge de salons, système d'avertissements.</li>
+                <li><strong>Système d'Expérience :</strong> Suivi de l'activité (XP) et attribution de niveaux.</li>
+                <li><strong>Utilitaires :</strong> Système de tickets, mode AFK, gestion des rôles via menus interactifs.</li>
+                <li><strong>Intelligence Artificielle :</strong> Interaction avec le Grand Zeno via des modèles de langage avancés.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Collecte et Utilisation des Données</h2>
+            <p>ZenoBot a été conçu dans le respect de la vie privée de ses utilisateurs. Pour fonctionner correctement, le bot collecte et stocke uniquement les données strictement nécessaires :</p>
+            <ul>
+                <li><strong>Identifiants Discord (ID) :</strong> Utilisés pour sauvegarder l'expérience (XP), les niveaux, les statuts AFK et les avertissements.</li>
+                <li><strong>Contenu des messages :</strong> Les messages sont lus de manière éphémère pour la détection de liens malveillants, l'anti-spam ou pour interagir avec l'Intelligence Artificielle. <em>Les messages normaux ne sont ni enregistrés ni stockés dans nos bases de données.</em></li>
+                <li><strong>Configuration du serveur :</strong> Enregistrement des salons (logs, tickets, arrivées/départs) configurés par les administrateurs.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Règles de Conduite</h2>
+            <p>En utilisant ZenoBot, vous vous engagez à ne pas :</p>
+            <ul>
+                <li>Spammer les commandes du bot ou tenter de surcharger son système (notamment l'Intelligence Artificielle).</li>
+                <li>Utiliser le bot pour contourner les Conditions d'Utilisation officielles de Discord.</li>
+                <li>Tenter d'exploiter des failles ou de pirater le code source du bot.</li>
+            </ul>
+            <p>Le créateur se réserve le droit de mettre le serveur sur liste noire (blacklist) et de retirer ZenoBot en cas d'abus manifeste.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Limitation de Responsabilité</h2>
+            <p>ZenoBot est fourni "tel quel". Son créateur ne saurait être tenu responsable des dommages directs ou indirects liés à l'utilisation du bot (comme la suppression accidentelle de messages via la commande purge, le bannissement de membres par le système auto-modération, ou les réponses générées par l'IA).</p>
+            <p>Les administrateurs des serveurs utilisant ZenoBot sont entièrement responsables de la configuration des permissions accordées au bot.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Nous Contacter</h2>
+            <p>Si vous avez des questions concernant ces conditions, si vous souhaitez demander la suppression de vos données (Wipe Data), ou si vous avez besoin d'assistance technique, vous pouvez contacter le Commandant :</p>
+            <p>👉 Rejoignez le <a href="https://discord.com/invite/v7kGnMjf8T" target="_blank">Dragon Ball SERVEUR</a> (Serveur de Support Officiel).</p>
+        </div>
+
     </div>
-  </header>
 
-  <section class="max-w-4xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-semibold mb-4 text-green-300">🔥 Qui est ZenoBot ?</h2>
-    <p class="mb-6">
-      ZenoBot est un bot Discord de cybersécurité inspiré de <strong>Zeno</strong> dans Dragon Ball. Il protège ton serveur contre les menaces, 
-      mais si quelqu’un ose polluer la planète... <span class="text-red-400 font-bold">Zeno détruit tout (avec humour bien sûr) 😅</span>.
-    </p>
+    <footer>
+        <p>&copy; 2026 ZenoBot. Créé par le Commandant (Mathéo). Tous droits réservés.</p>
+        <p>ZenoBot n'est pas affilié à Discord Inc. ni à la franchise Dragon Ball.</p>
+    </footer>
 
-    <img src="img/zeno-main.png" alt="Zeno" class="mx-auto my-8 w-64 rounded-xl shadow-lg">
-
-    <h2 class="text-3xl font-semibold mb-4 text-green-300">🛡️ Fonctionnalités</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>👀 Surveillance avancée des utilisateurs suspects</li>
-      <li>🚨 Détection des comportements suspects (spam, bots, etc.)</li>
-      <li>🌍 Destruction cosmique des ennemis de l’écologie</li>
-      <li>📜 Logs de sécurité et alertes en temps réel</li>
-    </ul>
-
-    <div class="mt-10 text-center">
-      <a href="https://discord.gg/BCPFAEaP" class="bg-green-500 text-black font-bold py-3 px-6 rounded-xl hover:bg-green-400 transition">
-        🚀 Rejoindre le Serveur ZenoBot
-      </a>
-    </div>
-  </section>
-
-  <footer class="text-center text-sm text-gray-500 py-10 border-t border-green-700 mt-10">
-    <p>💬 Fan de Dragon Ball ? Rejoins aussi notre commu : <a href="https://discord.com/invite/v7kGnMjf8T" class="underline text-blue-400">discord.com/invite/v7kGnMjf8T</a></p>
-    <p class="mt-2">© 2025 ZenoBot. Tous droits réservés.</p>
-  </footer>
 </body>
 </html>
